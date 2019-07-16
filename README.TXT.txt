@@ -5,3 +5,5 @@ How to example
 (4) Rectangles and circles
 (6) Using the canvas
 (7) 50 frames per second main loop
+(8) Store game variables in an object 
+    (Cannon)
