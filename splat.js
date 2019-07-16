@@ -103,15 +103,7 @@ function drawRotatedRect(x,y,width,height,degrees,color){
 
 }
 
-//var cannon.splatOn = false;
-//var splatX;
-//var splatY;
-//var splatAngle;
-//var splatTravel;
-//var cannon.xPos = 50;
-//var cannon.yPos = 250;
-//var cannon.width = 100;
-//var cannon.height = 20;
+
 
 function game(){
 	var x,y,radians,steps, i;
@@ -141,15 +133,12 @@ function game(){
 		i = cannon.splatTravel;
 		drawArc(x-i*Math.cos(radians)*cannon.width,y-i*Math.sin(radians)*cannon.width,10,'red');		
 	}		
-	if (cannon.splatTravel > 5)
+	if (cannon.splatTravel > 10)
 	{
 		drawArc(x+i*Math.cos(radians)*cannon.width,y+i*Math.sin(radians)*cannon.width,10,'dimgrey');						
 		cannon.splatOn = false;
 	}
 	
-	
-    //drawRotatedRect(common.cannon.xPos,cannon.yPos,120,120,0, 'dimgray');
-    //drawRotatedRect(common.cannon.xPos+10,cannon.yPos+50,110,30,cannon.oldAngle, 'dimgray');		
     drawArc(cannon.xPos+cannon.width/2, cannon.yPos+cannon.height/2, cannon.width/2+10, 'dimgray');
 	
     // draw a rotated rect
